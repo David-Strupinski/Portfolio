@@ -29,6 +29,7 @@ body, footer{
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 }
 
 table, td{
@@ -67,7 +68,7 @@ td.desc{
 	padding:1em;
 	border: 1px solid;
 	border-radius: 0.4em;
-	height: 15em;
+	min-height: 15em;
 }
 #skills li{
 	border: 1px solid;
@@ -205,5 +206,5 @@ ul{
 	padding: 1em;
 	border: 1px solid;
 	border-radius: 0.4em;
-	height: 15em;
+	min-height: 15em;
 }
