@@ -19,7 +19,7 @@ h1{
 	font-weight: bold;
 }
 
-body, footer{
+body{
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
@@ -187,7 +187,7 @@ textarea{
 }
 
 fieldset{
-	width: 32em;
+	width: 10vw;
 	border: 1px solid;
 	border-radius: 0.4em;
 	margin-left: auto;
