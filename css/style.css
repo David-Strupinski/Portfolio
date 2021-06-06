@@ -61,8 +61,10 @@ td.name{
 td.name img{
 	width: 1em;
 	padding-top: 1em;
+	animation: shrink 0.5s;
 }
 td.name:hover img{
+	animation: grow 0.5s;
 	width: 3em;
 }
 td.desc{
@@ -70,6 +72,16 @@ td.desc{
 	text-align: left;
 	vertical-align: top;
 	padding: 1em;
+}
+
+@keyframes grow{
+	from {width: 1em;}
+	to {width: 3em;}
+}
+
+@keyframes shrink{
+	from {width: 3em;}
+	to {width: 1em;}
 }
 
 #main-block{

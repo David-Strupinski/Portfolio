@@ -21,20 +21,6 @@ function darkModeToggle() {
 	subtitle.style.color = 'white';
 }
 
-// var titleNames = document.querySelectorAll('.name');
-// for (let i = 0; i < titleNames.length; i++) {
-// 	titleNames[i].addEventListener('mouseover', function (event) {
-// 		// titleNames[i].classList.add('bigimg');
-// 		event.target.style.color = 'blue';
-// 		event.target.classList.toggle('bigimg');
-// 	})
-// 	titleNames[i].addEventListener('mouseout', function (event) {
-// 		// titleNames[i].classList.remove('bigimg');
-// 		event.target.style.color = 'white';
-// 		event.target.classList.toggle('bigimg');
-// 	})
-// }
-
 // function darkModeToggleEnter(event) {
 // 	if (event.keyCode === 13) {
 // 		darkModeToggle();
