@@ -17,7 +17,18 @@ submitBtn.onclick = function () {
 	document.querySelector('#name').value = "";
 	document.querySelector('#email').value = "";
 	document.querySelector('#message').value = "";
+
+	// retrieve contact info object
+	// console.log(JSON.parse(localStorage.getItem('contactInfo')));
 }
+
+// pull json personal data from bin site
+const url = 'https://api.jsonbin.io/b/60bdd1444d024768b8f07f26';
+fetch(url).then(function (response) {
+	return response.json();
+}).then(function (data) {
+	console.log(data);
+})
 
 var html = document.querySelector('html');
 var title = document.querySelector('h1[name="title"]'); // add params to tag to get specific one
