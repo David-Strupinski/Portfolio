@@ -1,0 +1,19 @@
+{
+    "firstName": "David",
+    "middleName": "Nathan",
+    "lastName": "Strupinski",
+    "birthDate": "7/17/2002",
+    "gender": "male",
+    "address": {
+        "streetAddress": "6108 N 40th St",
+        "city": "Tacoma",
+        "state": "WA",
+        "postalCode": "98407"
+    },
+    "phoneNumber": [
+        {
+            "type": "mobile",
+            "number": "253 722-6439"
+        }
+    ]
+}
