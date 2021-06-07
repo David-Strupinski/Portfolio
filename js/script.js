@@ -2,21 +2,21 @@ var submitBtn = document.querySelector('#submit');
 
 submitBtn.onclick = function () {
 	// get and store values
-	var name = document.querySelector('#name').value
-	var email = document.querySelector('#email').value
-	var message = document.querySelector('#message').value
+	var name = document.querySelector('#name')
+	var email = document.querySelector('#email')
+	var message = document.querySelector('#message')
 	var contactInfo = {
-		"name": name,
-		"email": email,
-		"message": message
+		"name": name.value,
+		"email": email.value,
+		"message": message.value
 	}
 	var contactInfoString = JSON.stringify(contactInfo);
 	localStorage.setItem('contactInfo', contactInfoString);
 
 	// clear inputs
-	document.querySelector('#name').value = "";
-	document.querySelector('#email').value = "";
-	document.querySelector('#message').value = "";
+	name.value = "";
+	email.value = "";
+	message.value = "";
 
 	// retrieve contact info object
 	// console.log(JSON.parse(localStorage.getItem('contactInfo')));
