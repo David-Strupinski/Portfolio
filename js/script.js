@@ -1,7 +1,19 @@
 var submitBtn = document.querySelector('#submit');
 
 submitBtn.onclick = function () {
-	// console.log([document.querySelector('#name').value, document.querySelector('#email').value, document.querySelector('#message').value]);
+	// get and store values
+	var name = document.querySelector('#name').value
+	var email = document.querySelector('#email').value
+	var message = document.querySelector('#message').value
+	var contactInfo = {
+		"name": name,
+		"email": email,
+		"message": message
+	}
+	var contactInfoString = JSON.stringify(contactInfo);
+	localStorage.setItem('contactInfo', contactInfoString);
+
+	// clear inputs
 	document.querySelector('#name').value = "";
 	document.querySelector('#email').value = "";
 	document.querySelector('#message').value = "";
