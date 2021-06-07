@@ -24,10 +24,12 @@ submitBtn.onclick = function () {
 
 // pull json personal data from bin site
 const url = 'https://api.jsonbin.io/b/60bdd1444d024768b8f07f26';
-fetch(url).then(function (response) {
+fetch(url).then(response => {
 	return response.json();
-}).then(function (data) {
+}).then(data => {
 	console.log(data);
+}).catch(error => {
+	console.log(error);
 })
 
 var html = document.querySelector('html');
