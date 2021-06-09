@@ -65,3 +65,4 @@ var rand = Math.floor(Math.random() * imgSrcs.length);
 var img = document.querySelector('img');
 img.setAttribute('src', imgSrcs[rand]);
 */
+
