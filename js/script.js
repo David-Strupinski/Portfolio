@@ -1,3 +1,7 @@
+// jQuery
+$('document').r
+
+// vanilla js
 var submitBtn = document.querySelector('#submit');
 
 submitBtn.onclick = function () {
@@ -32,25 +36,21 @@ fetch(url).then(response => {
 	console.log(error);
 })
 
-var html = document.querySelector('html');
-var title = document.querySelector('h1[name="title"]'); // add params to tag to get specific one
-var subtitle = document.querySelector('small');
-var messageBox = document.querySelector('#message');
-
-title.addEventListener('click', darkModeToggle);
-// messageBox.addEventListener('keypress', darkModeToggleEnter);
+$('h1[name="title"]');
+$('h1[name="title"]').on('click', darkModeToggle);
+// $('#message').on('keypress', toggleOnEnter());
 
 function darkModeToggle() {
-	html.classList.toggle('darklight');
-	title.style.color = 'white'; // could use "this" instead of "title" here
-	subtitle.style.color = 'white';
+	$('html').toggleClass('darklight');
+	$('h1[name="title"]').css('color', 'white');
+	$('small[name="subtitle"]').css('color', 'white');
 }
 
-// function darkModeToggleEnter(event) {
-// 	if (event.keyCode === 13) {
-// 		darkModeToggle();
-// 	}
-// }
+function toggleOnEnter(event) {
+	if (event.keyCode === 13) {
+		darkModeToggle();
+	}
+}
 
 // fun: setting first image to a random image
 /*
